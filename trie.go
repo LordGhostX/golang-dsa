@@ -4,13 +4,13 @@ import (
 	"strings"
 )
 
-type Node struct {
-	children [26]*Node
+type TrieNode struct {
+	children [26]*TrieNode
 	isEnd    bool
 }
 
 type Trie struct {
-	root [26]*Node
+	root [26]*TrieNode
 }
 
 func (t *Trie) Insert(s string) {
@@ -19,7 +19,7 @@ func (t *Trie) Insert(s string) {
 	for i := 0; i < sLen; i++ {
 		charIndex := getCharIndex(s[i : i+1])
 		if currentBranch[charIndex] == nil {
-			currentBranch[charIndex] = &Node{}
+			currentBranch[charIndex] = &TrieNode{}
 		}
 		if i == sLen-1 {
 			currentBranch[charIndex].isEnd = true
