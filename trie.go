@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -51,11 +50,4 @@ func (t *Trie) Search(s string) bool {
 
 func getCharIndex(s string) int {
 	return int(strings.ToLower(s)[0]) - 97
-}
-
-func main() {
-	t := Trie{}
-	t.Insert("hello")
-	fmt.Println(t.Search("hello"))
-	fmt.Println(t.Search("hel"))
 }
