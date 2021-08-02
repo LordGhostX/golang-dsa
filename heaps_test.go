@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestHeapMethods(t *testing.T) {
+func TestHeap_Methods(t *testing.T) {
 	h := Heap{}
 
 	elementsToAdd := []int{10, 5, 2, 15, 8, 20, 3, 11, 50, 23, 25, 30}

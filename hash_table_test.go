@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestHashTableSearch(t *testing.T) {
+func TestHashTable_Search(t *testing.T) {
 	h := HashTable{size: 5}
 
 	elementsToAdd := []string{"hello", "house", "fire", "school"}
@@ -21,7 +21,7 @@ func TestHashTableSearch(t *testing.T) {
 	}
 }
 
-func TestHashTableDelete(t *testing.T) {
+func TestHashTable_Delete(t *testing.T) {
 	h := HashTable{size: 5}
 
 	elementsToAdd := []string{"hello", "world", "house", "fire", "school"}

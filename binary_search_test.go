@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestBinarySearchMethods(t *testing.T) {
+func TestBinarySearch_Methods(t *testing.T) {
 	b := BinarySearch{}
 
 	if b.Search(1) {

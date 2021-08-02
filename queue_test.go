@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestQueueMethods(t *testing.T) {
+func TestQueue_Methods(t *testing.T) {
 	q := Queue{}
 
 	elementsToAdd := []int{2, 3, 5, 6, 7, 9, 3}

@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestTrieMethods(t *testing.T) {
+func TestTrie_Methods(t *testing.T) {
 	tr := Trie{}
 
 	elementsToAdd := []string{"hello", "world", "fish", "dog", "house"}

@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestStackMethods(t *testing.T) {
+func TestStack_Methods(t *testing.T) {
 	s := Stack{}
 
 	elementsToAdd := []int{2, 3, 5, 6, 7, 9, 3}

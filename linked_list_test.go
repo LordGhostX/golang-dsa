@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestLinkedListAppend(t *testing.T) {
+func TestLinkedList_Append(t *testing.T) {
 	l := LinkedList{}
 
 	for i := 0; i < 10; i++ {
@@ -15,7 +15,7 @@ func TestLinkedListAppend(t *testing.T) {
 	}
 }
 
-func TestLinkedListPrepend(t *testing.T) {
+func TestLinkedList_Prepend(t *testing.T) {
 	l := LinkedList{}
 
 	for i := 0; i < 10; i++ {
@@ -26,7 +26,7 @@ func TestLinkedListPrepend(t *testing.T) {
 	}
 }
 
-func TestLinkedListDelete(t *testing.T) {
+func TestLinkedList_Delete(t *testing.T) {
 	l := LinkedList{}
 
 	elementsToAdd := []int{10, 5, 8, 3, 9, 20}
