@@ -12,8 +12,8 @@ func TestTrieMethods(t *testing.T) {
 		tr.Insert(v)
 	}
 
-	testInput := []string{"world", "cat", "house", "dog", "school", "fire"}
-	expected := []bool{true, false, true, true, false, false}
+	testInput := []string{"world", "cat", "house", "dog", "school", "fire", "fis"}
+	expected := []bool{true, false, true, true, false, false, false}
 	for i := 0; i < len(testInput); i++ {
 		if tr.Search(testInput[i]) != expected[i] {
 			t.Fail()

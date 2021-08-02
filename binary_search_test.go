@@ -5,7 +5,11 @@ import "testing"
 func TestBinarySearchMethods(t *testing.T) {
 	b := BinarySearch{}
 
-	elementsToAdd := []int{4, 6, 10, 8, 7, 14}
+	if b.Search(1) {
+		t.Fail()
+	}
+
+	elementsToAdd := []int{4, 4, 6, 10, 8, 7, 14}
 	for _, v := range elementsToAdd {
 		b.Insert(v)
 	}

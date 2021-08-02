@@ -36,12 +36,8 @@ func (t *Trie) Search(s string) bool {
 		if currentBranch[charIndex] == nil {
 			return false
 		}
-		if i == sLen-1 {
-			if currentBranch[charIndex].isEnd {
-				return true
-			} else {
-				return false
-			}
+		if i == sLen-1 && currentBranch[charIndex].isEnd {
+			return true
 		}
 		currentBranch = &currentBranch[charIndex].children
 	}
