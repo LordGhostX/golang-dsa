@@ -37,7 +37,7 @@ func TestLinkedListDelete(t *testing.T) {
 	testInput := []int{4, 3, 5, 10, 13, 9, 7}
 	expected := []int{6, 5, 4, 3, 3, 2, 2}
 	for i := 0; i < len(testInput); i++ {
-		l.DeleteByValue(testInput[i])
+		l.Delete(testInput[i])
 		if l.length != expected[i] {
 			t.Fail()
 		}

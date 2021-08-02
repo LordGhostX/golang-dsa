@@ -31,7 +31,7 @@ func (l *LinkedList) Prepend(v int) {
 	l.length++
 }
 
-func (l *LinkedList) DeleteByValue(v int) {
+func (l *LinkedList) Delete(v int) {
 	if l.head.value == v {
 		l.head = l.head.nextLink
 		l.length--
